@@ -11,7 +11,7 @@ This repository contains my daily practice problems and logic building exercises
 - `Q1seclargenum.js` – Logic to find second largest number.
 - `logicaloperator.js` – New logic-based exercises.
 - `index.html` – HTML file to run JavaScript logic.
-- mathfunction - math function.
+- `mathfunction.js` - math function.
   
 
 ## 📅 Purpose
