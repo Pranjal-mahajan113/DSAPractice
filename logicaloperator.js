@@ -16,6 +16,9 @@ console.log(10>9 && 10<11);
 console.log(12>24 || 123<34);
 
 
+
+///✅  UNARY OPERATOR 
+
 //post increment
 // let a = 10;
 // let b = a++;
@@ -63,3 +66,15 @@ let result3 = i3++ + ++i3 + i3;
 console.log("Example 3:");
 console.log("result3 =", result3); // 10
 console.log("i3 =", i3); 
+
+
+let e = true ;//converts true to number 1 using type coercion.
+e++;
+console.log(e);
+
+//can only use ++ on variables, not constants or literals.
+// let x = 10;
+// x++;         // valid
+
+// 10++;        // Syntax Error
+// Error: Invalid left-hand side expression
