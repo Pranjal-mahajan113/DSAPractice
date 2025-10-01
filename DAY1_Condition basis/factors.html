@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Factors of a Number</title>
+</head>
+<body></body>
+<script>
+  let n = Number(prompt("Enter a number:"));
+
+  if (isNaN(n) || n <= 0) {
+    console.log("Invalid input. Enter a positive number.");
+  } else {
+    console.log(`Factors of ${n} are:`);
+
+    for (let i = 1; i <= n; i++) {
+      if (n % i === 0) {
+        console.log(i);
+      }
+    }
+  }
+</script>
+</html>
