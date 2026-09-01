@@ -37,7 +37,10 @@
 // console.log(counTnegative([-1, 0, -1]));
 
 
-function smallestNumber(arr){
+// function smallestNumber(arr){
+//   if(arr.length || Array.isArray!==(arr){
+//     return
+//   })
 
-}
-console.log(smallestNumber([3,1,2]))
+// }
+// console.log(smallestNumber([3,1,2]))
