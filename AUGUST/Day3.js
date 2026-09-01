@@ -24,7 +24,6 @@ function binarySearch(nums, target) {
 }
 console.log(binarySearch([-1, 0, 3, 5, 9, 12], 9));
 
-
 function binarySearch(nums, target) {
   let left = 0;
   let right = nums.length - 1;
@@ -46,5 +45,30 @@ function binarySearch(nums, target) {
   return -1;
 }
 
-console.log(binarySearch([-1, 0, 3, 5, 9, 12], 9)); // 4
-console.log(binarySearch([-1, 0, 3, 5, 9, 12], 2)); // -1
+// console.log(binarySearch([-1, 0, 3, 5, 9, 12], 9)); // 4
+// console.log(binarySearch([-1, 0, 3, 5, 9, 12], 2)); // -1
+
+// function powerOf2(n) {
+//   if (n <= 0) return false;
+//   while (n % 2 === 0) {
+//     n = n / 2;
+//   }
+//   return n===1;
+// }
+// console.log(powerOf2(16));
+// console.log(powerOf2(12));
+
+function Power2Bitwise(num) {
+  return num > 0 && (num & (num - 1)) === 0;
+}
+console.log(Power2Bitwise(18));
+
+
+function Powerof3(number){
+  if(number<=0)return false;
+  while(number %3==0){
+    number=number/3
+  }
+  return number===1
+}
+console.log(Powerof3(27))
