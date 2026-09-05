@@ -10,7 +10,7 @@ function removeDuplicate(nums) {
   }
   return x + 1;
 }
-// console.log(removeDuplicate([1, 1, 2, 3, 3, 5]));
+console.log(removeDuplicate([1, 1, 2, 3, 3, 5]));
 
 function removeElemet(nums, val) {
   let x = 0;
