@@ -11,8 +11,29 @@ function findmax(arr, n) {
     return answer;
   }
 }
-let arr = [4, 8, 2, 10, 6];
+// let arr = [4, 8, 2, 10, 6];
 
-console.log(findmax(arr, arr.length));
+// console.log(findmax(arr, arr.length));
+
+function sum(arr, n) {
+  if (n === 1) {
+    return arr[0];
+  }
+  let last = arr[n - 1];
+  let answer = sum(arr, n - 1);
+  return last + answer;
+}
+
+let arr = [3, 5, 2, 7, 4];
+console.log(sum(arr,arr.length))
 
 
+function productofArray(arr,n){
+    if(n===1){
+        return arr[0];
+    }
+    let last = arr[n-1];
+    let answer=productofArray(arr,n-1)
+    return last * answer;
+}
+console.log(product([2, 3, 4, 5], 4));
