@@ -92,3 +92,4 @@ function singleNumber(nums){
 console.log(singleNumber([4,1,2,1,2]))
 
 //9->Merge sorted array
+// function mergeSortedarray(nums1,)
