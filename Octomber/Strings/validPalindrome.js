@@ -1,27 +1,28 @@
 var isPalindrome = function(s) {
+
+    s = s.toLowerCase();
+
     let left = 0;
     let right = s.length - 1;
 
     while (left < right) {
 
-        // non-alphanumeric ko skip karo
-        if (!/[a-zA-Z0-9]/.test(s[left])) {
+        if (!s[left].match(/[a-z0-9]/i)) {
             left++;
-            continue;
         }
 
-        if (!/[a-zA-Z0-9]/.test(s[right])) {
+        else if (!s[right].match(/[a-z0-9]/i)) {
             right--;
-            continue;
         }
 
-        // lowercase karke compare
-        if (s[left].toLowerCase() !== s[right].toLowerCase()) {
+        else if (s[left] === s[right]) {
+            left++;
+            right--;
+        }
+
+        else {
             return false;
         }
-
-        left++;
-        right--;
     }
 
     return true;
