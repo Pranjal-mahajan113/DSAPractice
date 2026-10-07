@@ -13,16 +13,16 @@ function ValidAnagram(s, t) {
     }
   }
   for (let j = 0; j < t.length; j++) {
-    let chh = t[j];
-    if (freqt[chh]) {
-      freqt[chh]++;
+    let ch = t[j];
+    if (freqt[ch]) {
+      freqt[ch]++;
     } else {
-      freqt[chh] = 1;
+      freqt[ch] = 1;
     }
   }
   for (let i = 0; i < s.length; i++) {
     let ch = s[i];
-    if (freqs[ch] !== freqt[chh]) {
+    if (freqs[ch] !== freqt[ch]) {
       return false;
     }
   }
