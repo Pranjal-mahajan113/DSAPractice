@@ -21,3 +21,15 @@ function subsets(arr, n, index, temp) {
 let arr = [1, 2, 3];
 
 subsets(arr, arr.length, 0, []);
+
+// function test(index) {
+//     console.log(index);
+
+//     if (index === 3) {
+//         return;
+//     }
+
+//     test(index + 1);
+// }
+
+// test(0);
