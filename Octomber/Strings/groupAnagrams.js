@@ -2,13 +2,15 @@ function groupAnagrams(strs) {
   let groups = {};
   for (let i = 0; i < strs.length; i++) {
     let str = strs[i];
-    let sortedStr = str.split("").sort().join("");
-    if (!groups[sortedStr]) {
-      groups[sortedStr] = [strs[i]];
+    let sorted = str.split("").sort().join("");
+    if (groups[sorted]) {
+      groups[sorted].push(str);
     } else {
-      groups[sortedStr].push(strs[i]);
+      groups[sorted] = [str];
     }
   }
-
   return Object.values(groups);
 }
+
+let strs = ["eat", "tea", "tan", "ate", "nat", "bat"];
+console.log(groupAnagrams(strs));
