@@ -4,6 +4,7 @@ function minAddToMakeValid(s) {
   for (let i = 0; i < s.length; i++) {
     if (s[i] === "(") {
       open++;
+    } else if (open > 0) {
       open--;
     } else {
       add++;
@@ -11,3 +12,5 @@ function minAddToMakeValid(s) {
   }
   return open + add;
 }
+let s = "())(()";
+console.log(minAddToMakeValid(s))
